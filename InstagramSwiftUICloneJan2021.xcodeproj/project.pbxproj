@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABD3F4FB25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F4FA25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift */; };
+		ABD3F4FD25BB238E00A7A01B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F4FC25BB238E00A7A01B /* RootView.swift */; };
+		ABD3F4FF25BB239000A7A01B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD3F4FE25BB239000A7A01B /* Assets.xcassets */; };
+		ABD3F50225BB239000A7A01B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD3F50125BB239000A7A01B /* Preview Assets.xcassets */; };
+		ABD3F51125BB23CF00A7A01B /* LibModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51025BB23CF00A7A01B /* LibModifiers.swift */; };
+		ABD3F51425BB23EC00A7A01B /* LibOptionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51325BB23EC00A7A01B /* LibOptionals.swift */; };
+		ABD3F51725BB240300A7A01B /* LibViewBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51625BB240300A7A01B /* LibViewBuilders.swift */; };
+		ABD3F51A25BB241400A7A01B /* LibTools1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51925BB241400A7A01B /* LibTools1.swift */; };
+		ABD3F51D25BB242600A7A01B /* LibTools2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51C25BB242600A7A01B /* LibTools2.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ABD3F4F725BB238E00A7A01B /* InstagramSwiftUICloneJan2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUICloneJan2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD3F4FA25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUICloneJan2021App.swift; sourceTree = "<group>"; };
+		ABD3F4FC25BB238E00A7A01B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		ABD3F4FE25BB239000A7A01B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABD3F50125BB239000A7A01B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABD3F50325BB239000A7A01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABD3F51025BB23CF00A7A01B /* LibModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibModifiers.swift; sourceTree = "<group>"; };
+		ABD3F51325BB23EC00A7A01B /* LibOptionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibOptionals.swift; sourceTree = "<group>"; };
+		ABD3F51625BB240300A7A01B /* LibViewBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibViewBuilders.swift; sourceTree = "<group>"; };
+		ABD3F51925BB241400A7A01B /* LibTools1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTools1.swift; sourceTree = "<group>"; };
+		ABD3F51C25BB242600A7A01B /* LibTools2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTools2.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABD3F4F425BB238E00A7A01B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB7E5F2525BB274E007AF870 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		AB7E5F2625BB2751007AF870 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		AB7E5F2725BB2752007AF870 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AB7E5F2825BB2753007AF870 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ABD3F4EE25BB238E00A7A01B = {
+			isa = PBXGroup;
+			children = (
+				ABD3F4F925BB238E00A7A01B /* InstagramSwiftUICloneJan2021 */,
+				ABD3F4F825BB238E00A7A01B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABD3F4F825BB238E00A7A01B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABD3F4F725BB238E00A7A01B /* InstagramSwiftUICloneJan2021.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABD3F4F925BB238E00A7A01B /* InstagramSwiftUICloneJan2021 */ = {
+			isa = PBXGroup;
+			children = (
+				ABD3F50E25BB23B400A7A01B /* App */,
+				ABD3F52125BB25B800A7A01B /* API */,
+				ABD3F50D25BB23B300A7A01B /* Models */,
+				ABD3F50C25BB23B000A7A01B /* Views */,
+				ABD3F50B25BB23AE00A7A01B /* ViewModels */,
+				ABD3F50A25BB23AA00A7A01B /* Res */,
+				ABD3F4FE25BB239000A7A01B /* Assets.xcassets */,
+				ABD3F50025BB239000A7A01B /* Preview Content */,
+			);
+			path = InstagramSwiftUICloneJan2021;
+			sourceTree = "<group>";
+		};
+		ABD3F50025BB239000A7A01B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ABD3F50125BB239000A7A01B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABD3F50A25BB23AA00A7A01B /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				ABD3F50F25BB23BA00A7A01B /* Libs */,
+				ABD3F50325BB239000A7A01B /* Info.plist */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		ABD3F50B25BB23AE00A7A01B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB7E5F2825BB2753007AF870 /* Profile */,
+				AB7E5F2725BB2752007AF870 /* Authentication */,
+				AB7E5F2625BB2751007AF870 /* Notifications */,
+				AB7E5F2525BB274E007AF870 /* Feed */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ABD3F50C25BB23B000A7A01B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABD3F52A25BB268F00A7A01B /* Items */,
+				ABD3F52825BB262900A7A01B /* Notifications */,
+				ABD3F52725BB262800A7A01B /* Search */,
+				ABD3F52625BB262600A7A01B /* Comments */,
+				ABD3F52525BB262500A7A01B /* Feed */,
+				ABD3F52425BB262400A7A01B /* Profile */,
+				ABD3F52325BB262200A7A01B /* UploadPost */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ABD3F50D25BB23B300A7A01B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABD3F50E25BB23B400A7A01B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ABD3F4FC25BB238E00A7A01B /* RootView.swift */,
+				ABD3F4FA25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ABD3F50F25BB23BA00A7A01B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				ABD3F51025BB23CF00A7A01B /* LibModifiers.swift */,
+				ABD3F51325BB23EC00A7A01B /* LibOptionals.swift */,
+				ABD3F51625BB240300A7A01B /* LibViewBuilders.swift */,
+				ABD3F51925BB241400A7A01B /* LibTools1.swift */,
+				ABD3F51C25BB242600A7A01B /* LibTools2.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		ABD3F52125BB25B800A7A01B /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ABD3F52325BB262200A7A01B /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
+		ABD3F52425BB262400A7A01B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ABD3F52525BB262500A7A01B /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		ABD3F52625BB262600A7A01B /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		ABD3F52725BB262800A7A01B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		ABD3F52825BB262900A7A01B /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		ABD3F52A25BB268F00A7A01B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABD3F4F625BB238E00A7A01B /* InstagramSwiftUICloneJan2021 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD3F50625BB239000A7A01B /* Build configuration list for PBXNativeTarget "InstagramSwiftUICloneJan2021" */;
+			buildPhases = (
+				ABD3F4F325BB238E00A7A01B /* Sources */,
+				ABD3F4F425BB238E00A7A01B /* Frameworks */,
+				ABD3F4F525BB238E00A7A01B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstagramSwiftUICloneJan2021;
+			productName = InstagramSwiftUICloneJan2021;
+			productReference = ABD3F4F725BB238E00A7A01B /* InstagramSwiftUICloneJan2021.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABD3F4EF25BB238E00A7A01B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					ABD3F4F625BB238E00A7A01B = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = ABD3F4F225BB238E00A7A01B /* Build configuration list for PBXProject "InstagramSwiftUICloneJan2021" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABD3F4EE25BB238E00A7A01B;
+			productRefGroup = ABD3F4F825BB238E00A7A01B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABD3F4F625BB238E00A7A01B /* InstagramSwiftUICloneJan2021 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABD3F4F525BB238E00A7A01B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD3F50225BB239000A7A01B /* Preview Assets.xcassets in Resources */,
+				ABD3F4FF25BB239000A7A01B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABD3F4F325BB238E00A7A01B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD3F4FD25BB238E00A7A01B /* RootView.swift in Sources */,
+				ABD3F51725BB240300A7A01B /* LibViewBuilders.swift in Sources */,
+				ABD3F51D25BB242600A7A01B /* LibTools2.swift in Sources */,
+				ABD3F51425BB23EC00A7A01B /* LibOptionals.swift in Sources */,
+				ABD3F4FB25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift in Sources */,
+				ABD3F51125BB23CF00A7A01B /* LibModifiers.swift in Sources */,
+				ABD3F51A25BB241400A7A01B /* LibTools1.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABD3F50425BB239000A7A01B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABD3F50525BB239000A7A01B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABD3F50725BB239000A7A01B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"InstagramSwiftUICloneJan2021/Preview Content\"";
+				DEVELOPMENT_TEAM = 8R94WS9HFC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = InstagramSwiftUICloneJan2021/Res/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alias111.InstagramSwiftUICloneJan2021;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABD3F50825BB239000A7A01B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"InstagramSwiftUICloneJan2021/Preview Content\"";
+				DEVELOPMENT_TEAM = 8R94WS9HFC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = InstagramSwiftUICloneJan2021/Res/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alias111.InstagramSwiftUICloneJan2021;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABD3F4F225BB238E00A7A01B /* Build configuration list for PBXProject "InstagramSwiftUICloneJan2021" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD3F50425BB239000A7A01B /* Debug */,
+				ABD3F50525BB239000A7A01B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD3F50625BB239000A7A01B /* Build configuration list for PBXNativeTarget "InstagramSwiftUICloneJan2021" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD3F50725BB239000A7A01B /* Debug */,
+				ABD3F50825BB239000A7A01B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABD3F4EF25BB238E00A7A01B /* Project object */;
+}
