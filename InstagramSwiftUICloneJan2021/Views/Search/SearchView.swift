@@ -3,7 +3,7 @@ import SwiftUI
 struct SearchView {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    
+    @State var searchText: String = ""
     //™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━«
     
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -19,12 +19,14 @@ extension SearchView: View {
     var body: some View {
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        VStack(alignment: .center, spacing: nil, content: {
+        ScrollView(content: {
             
-            iAmHere(myStr: "SearchView")
+            // MARK: -∆  SearchBarComponent  ━━━━━━━━━━━━━━━━━━━
+            SearchBarComponent(text: $searchText)
+            
             
         })
-        // MARK: ||END__PARENT-VSTACK||
+        // MARK: ||END__PARENT-SCROLLVIEW||
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     }
