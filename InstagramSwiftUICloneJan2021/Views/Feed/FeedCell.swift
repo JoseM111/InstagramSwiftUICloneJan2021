@@ -4,6 +4,7 @@ struct FeedCell {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     let captionTxt: String = "All men have limits. They learn what they are and learn not to exceed them. I ignore mine!"
+    let sfSymbolList: [String] = ["heart", "bubble.right", "paperplane"]
     //™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━«
     
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -24,10 +25,12 @@ extension FeedCell: View {
             // MARK: -∆  User info  ━━━━━━━━━━━━━━━━━━━
             HStack {
                 
+                /// ™ Profile-Picture
                 Image("hood-thanos")
                     .circleImageFrame(aspectR: .fill,
                                       frameW: 35, frameH: 35)
                 
+                /// ™ Profile-name
                 Text("Hood Thanos")
                     .font(.system(size: 14, weight: .semibold))
             }
@@ -46,36 +49,46 @@ extension FeedCell: View {
             // MARK: -∆  Button  ━━━━━━━━━━━━━━━━━━━
             HStack(spacing: 15) {
                 
-                Button(action: {  }) {
-                    //∆━━━━━━ LABEL ━━━━━━
-                    Image(systemName: "heart")
-                        .aspectRatio(contentMode: .fill)
-                        .font(.system(size: 20))
-                        .frame(width: 20, height: 20)
+                ForEach(sfSymbolList, id: \.self) { sfSymbol in
+                    //∆..........
+                    ButtonUIScreen(actionCompletion: {
+                        //∆..........
+                        
+                    },
+                    //∆..........
+                    sfSymbolStr: sfSymbol
+                    )
+                    /// ∆ END OF: Button
                 }
+                /// ∆ END OF: ForEach
+               /**
+                ButtonUIScreen(actionCompletion: {
+                    //∆..........
+                    
+                },
+                //∆..........
+                sfSymbolStr: "heart"
+                )
                 
-                Button(action: {  }) {
-                    //∆━━━━━━ LABEL ━━━━━━
-                    Image(systemName: "bubble.right")
-                        .aspectRatio(contentMode: .fill)
-                        .font(.system(size: 20))
-                        .frame(width: 20, height: 20)
-                }
+                ButtonUIScreen(actionCompletion: {
+                    //∆..........
+                    
+                },
+                //∆..........
+                sfSymbolStr: "bubble.right"
+                )
                 
-                Button(action: {  }) {
-                    //∆━━━━━━ LABEL ━━━━━━
-                    Image(systemName: "paperplane")
-                        .aspectRatio(contentMode: .fill)
-                        .font(.system(size: 20))
-                        .frame(width: 20, height: 20)
-                }
-
+                ButtonUIScreen(actionCompletion: {
+                    //∆..........
+                    
+                },
+                //∆..........
+                sfSymbolStr: "paperplane"
+                )
+                */
             }
             /// ∆ END OF: HStack
-            .padding(4)
-            .padding(.leading, 4)
-            .font(.system(size: 14, weight: .semibold))
-            .foregroundColor(.black)
+            .modifier(ButtonStackModifierView())
             //∆ HANGER ™👕™ ━━━━━━━━━━━━━━━━━
             
             // MARK: -∆  Likes count  ━━━━━━━━━━━━━━━━━━━
