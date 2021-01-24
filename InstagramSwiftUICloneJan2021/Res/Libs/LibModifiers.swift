@@ -101,14 +101,14 @@ extension Image {
 extension View {
     
     func circleImageFrame(aspectR: ContentMode, frameW: CGFloat,
-                          frameH: CGFloat) -> some View {
+                          frameH: CGFloat, cornerR: CGFloat) -> some View {
         //∆..........
         self
             ///.resizable() NEEDS TO BE CALLED ON THE VIEW USING
             /// THIS FUNCTION BEFORE USING THIS MODIFIER
             .aspectRatio(contentMode: aspectR)
             .frame(width: frameW, height: frameH)
-            .clipShape(Circle())
+            .clipped()
     }
 }
 

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RootView {
+struct FeedView {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     
@@ -9,37 +9,53 @@ struct RootView {
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     
 }
-// MARK: END OF: RootView
+// MARK: END OF: FeedView
 
 /// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-extension RootView: View {
+extension FeedView: View {
     
     // MARK: ™━━━━━━━━━━━━ [body] ━━━━━━━━━━━━™
     var body: some View {
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        VStack(alignment: .center, spacing: nil, content: {
+        ScrollView {
             
-            iAmHere(myStr: "RootView")
+            LazyVStack(spacing: 32) {
+                
+                ForEach(0..<10, id: \.self) { _ in
+                    //∆..........
+                    FeedCell()
+                }
+                /// ∆ END OF: ForEach
+            }
+            /// ∆ END OF: LazyVStack
+            /// ™ Provides padding from the nav title bar & the first post
+            .padding(.top)
             
-        })
-        // MARK: ||END__PARENT-VSTACK||
+        }
+        // MARK: ||END__PARENT-SCROLLVIEW||
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     }
     // MARK: |||END OF: body|||
 }
-// MARK: END OF: RootView
+// MARK: END OF: FeedView
 
-/// ™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ([ Preview ]) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━™
+/// ™━━━━━━━━━━━━━━━━━━━━━━━━━━ ([ Preview ]) ━━━━━━━━━━━━━━━━━━━━━━━━━━™
 
 // MARK: - Preview ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-struct RootView_Previews: PreviewProvider {
+struct FeedView_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        RootView()//.padding(.all, 100)
+        NavigationView {
+            
+            FeedView()
+                .navigationTitle("Home")
+                .navigationBarTitleDisplayMode(.inline)
+        }
+        //.padding(.all, 100)
         //.preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)
         //.previewLayout(.fixed(width: 360, height: 720))
@@ -48,18 +64,5 @@ struct RootView_Previews: PreviewProvider {
     }
 }
 
-/// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// MARK: Helper Function
-func iAmHere(myStr: String) -> some View {
-    return Button(action: {  }) {
-        //∆..... LABEL .....
-        Text("\(myStr)")
-    }
-    .buttonStyle(PrimaryButtonStyle(paddingAll: 20, bgColorAlt: .netflixRed,
-                                    bgColor: .netflixRed, w: 200))
-    .animation(.spring())
-}
-
 /// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 
