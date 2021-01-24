@@ -1,61 +1,65 @@
 import SwiftUI
 
-struct FeedView {
+struct SearchBarComponent {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    
+    @Binding var text: String
     //™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━«
     
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     
 }
-// MARK: END OF: FeedView
+// MARK: END OF: SearchBarComponent
 
 /// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-extension FeedView: View {
+extension SearchBarComponent: View {
     
     // MARK: ™━━━━━━━━━━━━ [body] ━━━━━━━━━━━━™
     var body: some View {
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        ScrollView {
+        HStack(alignment: .center, spacing: nil, content: {
             
-            LazyVStack(spacing: 32) {
-                
-                ForEach(0..<10, id: \.self) { _ in
+            TextField("Search...", text: $text)
+                .padding(8)
+                .padding(.horizontal, 24)
+                .background(Color(.systemGray6))
+                .cornerRadius(8)
+            // MARK: - overlay
+            //™™|━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                .overlay(
                     //∆..........
-                    FeedCellComponent()
-                }
-                /// ∆ END OF: ForEach
-            }
-            /// ∆ END OF: LazyVStack
-            /// ™ Provides padding from the nav title bar & the first post
-            .padding(.top)
+                    HStack(content: {
+                        
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(.gray)
+                            .frame(minWidth: 0,
+                                   maxWidth: .infinity,
+                                   alignment: .leading)
+                            .padding(.leading, 8)
+                    })
+                    /// ∆ END OF: HStack
+                )
+            //™™|━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
             
-        }
-        // MARK: ||END__PARENT-SCROLLVIEW||
-        
+        })
+        // MARK: ||END__PARENT-HSTACK||
+        .padding()
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     }
     // MARK: |||END OF: body|||
 }
-// MARK: END OF: FeedView
+// MARK: END OF: SearchBarComponent
 
 /// ™━━━━━━━━━━━━━━━━━━━━━━━━━━ ([ Preview ]) ━━━━━━━━━━━━━━━━━━━━━━━━━━™
 
 // MARK: - Preview ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-struct FeedView_Previews: PreviewProvider {
+struct SearchBarComponent_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        NavigationView {
-            
-            FeedView()
-                .navigationTitle("Home")
-                .navigationBarTitleDisplayMode(.inline)
-        }
-        //.padding(.all, 100)
+        SearchBarComponent(text: .constant(""))//.padding(.all, 100)
         //.preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)
         //.previewLayout(.fixed(width: 360, height: 720))
