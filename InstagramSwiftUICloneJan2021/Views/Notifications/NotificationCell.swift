@@ -3,7 +3,7 @@ import SwiftUI
 struct NotificationCell {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    @State var showPostImage: Bool = true
+    @State var showPostImage: Bool = false
     //™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━«
     let captionTxt: String = "Liked one of your post."
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -43,7 +43,8 @@ extension NotificationCell: View {
             // MARK: -∆  showPostImage?  ━━━━━━━━━━━━━━━━━━━
             if showPostImage {
                 Image("black-panther2")
-                    .imageSquareFrame(aspectRatioFrameW: 48, aspectRatioFrameH: 48)
+                    .imageSquareFrame(
+                        aspectRatioFrameW: 48, aspectRatioFrameH: 48)
 
                 //∆..........
             } else {
@@ -57,7 +58,7 @@ extension NotificationCell: View {
                 .buttonCapsuleShapeFrame(
                     horizontalPadding: 20, verticalPadding: 8,
                     bgColor: .twitterBlue2, fgColor: .white,
-                    fontSize: 14)
+                    fontSize: 14, cornerR: 50)
 
             }
             // ∆ END OF: if-else

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct FeedCellComponent {
+struct FeedCell {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     let captionTxt: String = "All men have limits. They learn what they are and learn not to exceed them. I ignore mine!"
@@ -14,7 +14,7 @@ struct FeedCellComponent {
 
 /// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-extension FeedCellComponent: View {
+extension FeedCell: View {
     
     // MARK: ™━━━━━━━━━━━━ [body] ━━━━━━━━━━━━™
     var body: some View {
@@ -132,7 +132,7 @@ struct FeedCell_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        FeedCellComponent()//.padding(.all, 100)
+        FeedCell()//.padding(.all, 100)
         //.preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)
         .previewLayout(.fixed(width: 360, height: 720))
