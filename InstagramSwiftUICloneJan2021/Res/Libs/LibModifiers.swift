@@ -104,6 +104,15 @@ extension Image {
             .clipped()
     }
     
+    func imageSquareFrame(aspectRatioFrameW: CGFloat, aspectRatioFrameH: CGFloat) -> some View {
+        //∆..........
+        self
+            .resizable()
+            .aspectRatio(CGSize(width:aspectRatioFrameW, height: aspectRatioFrameH), contentMode: .fill)
+            .frame(width: aspectRatioFrameW, height: aspectRatioFrameH)
+    }
+    
+    
 }
 /// ∆ END extension Image
 
@@ -118,6 +127,18 @@ extension View {
             .aspectRatio(contentMode: aspectR)
             .frame(width: frameW, height: frameH)
             .clipped()
+    }
+    
+    func buttonCapsuleShapeFrame(horizontalPadding: CGFloat, verticalPadding: CGFloat,
+                                 bgColor: Color, fgColor: Color, fontSize: CGFloat) -> some View {
+        //∆..........
+        self
+            .padding(.horizontal, horizontalPadding)
+            .padding(.vertical, verticalPadding)
+            .background(bgColor)
+            .foregroundColor(fgColor)
+            .clipShape(Capsule())
+            .font(.system(size: fontSize, weight: .semibold))
     }
 }
 

@@ -19,12 +19,20 @@ extension NotificationsView: View {
     var body: some View {
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        VStack(alignment: .center, spacing: nil, content: {
+        ScrollView(content: {
             
-            iAmHere(myStr: "NotificationsView")
+            LazyVStack(spacing: 20) {
+                
+                ForEach(0..<20) { _ in
+                    //∆..........
+                    NotificationCell()
+                }
+                
+            }
+            /// ∆ END OF: LazyVStack
             
         })
-        // MARK: ||END__PARENT-VSTACK||
+        // MARK: ||END__PARENT-SCROLLVIEW||
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     }
