@@ -95,6 +95,15 @@ extension Image {
             .cornerRadius(cornerR)
     }
     
+    func imageGridFormatter(aspectRatio: ContentMode, frameW: CGFloat, frameH: CGFloat) -> some View {
+        //∆..........
+        self
+            .resizable()
+            .aspectRatio(contentMode: aspectRatio)
+            .frame(width: frameW, height: frameH)/// Could just pass: FULL_UI_SCREEN_WIDTH / 3
+            .clipped()
+    }
+    
 }
 /// ∆ END extension Image
 

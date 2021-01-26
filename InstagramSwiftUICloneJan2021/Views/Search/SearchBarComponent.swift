@@ -4,6 +4,7 @@ struct SearchBarComponent {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     @Binding var text: String
+    @Binding var isInSearchMode: Bool
     //™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━«
     
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -26,8 +27,8 @@ extension SearchBarComponent: View {
                 .padding(.horizontal, 24)
                 .background(Color(.systemGray6))
                 .cornerRadius(8)
-            // MARK: - overlay
-            //™™|━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                // MARK: - overlay
+                //™™|━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                 .overlay(
                     //∆..........
                     HStack(content: {
@@ -41,7 +42,39 @@ extension SearchBarComponent: View {
                     })
                     /// ∆ END OF: HStack
                 )
+                // MARK: - onTapGesture
+                //™™|━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                ///∆ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                ///  • When the search bar is tapped, it will show the search view
+                ///  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                .onTapGesture {
+                    //∆..........
+                    isInSearchMode = true
+                }
             //™™|━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            
+            // MARK: -∆  Horizontal Button(Cancel) To render back to false  ━━━━━━━
+            if isInSearchMode {
+                Button(action: {
+                    //∆..........
+                    isInSearchMode = false
+                    /// ™ Empties the text
+                    text = ""
+                    
+                    /// ™ To dismiss keyboard with `UIKit` extension
+                    UIApplication.shared.endEditing()
+                }) {
+                    //∆━━━━━━ LABEL ━━━━━━
+                    Text("Cancel")
+                        .foregroundColor(.black)
+                }
+                /// ∆ END OF: Button(Cancel)
+                .padding(.trailing, 8)
+                .transition(.move(edge: .trailing))
+                .animation(.easeOut(duration: 0.1))
+                //∆ HANGER ™👕™ ━━━━━━━━━━━━━━━━━
+            }
+            // ∆ END OF: if-statement
             
         })
         // MARK: ||END__PARENT-HSTACK||
@@ -59,7 +92,10 @@ struct SearchBarComponent_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        SearchBarComponent(text: .constant(""))//.padding(.all, 100)
+        SearchBarComponent(
+            text: .constant(""),
+            isInSearchMode: .constant(true))
+        //.padding(.all, 100)
         //.preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)
         //.previewLayout(.fixed(width: 360, height: 720))
