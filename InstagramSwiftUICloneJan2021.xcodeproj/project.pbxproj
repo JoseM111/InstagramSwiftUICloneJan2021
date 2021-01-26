@@ -17,6 +17,10 @@
 		AB9397D225BD825F006C3BD4 /* EXT_FeedCellButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9397D125BD825F006C3BD4 /* EXT_FeedCellButtonComponent.swift */; };
 		AB9397D725BD8544006C3BD4 /* ButtonStackModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9397D625BD8544006C3BD4 /* ButtonStackModifierView.swift */; };
 		AB9397DB25BD87D3006C3BD4 /* SearchBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9397DA25BD87D3006C3BD4 /* SearchBarComponent.swift */; };
+		ABB7E31025C07AAF0055B2F9 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB7E30F25C07AAF0055B2F9 /* PostGridView.swift */; };
+		ABB7E31325C086B10055B2F9 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB7E31225C086B10055B2F9 /* UserCell.swift */; };
+		ABB7E31625C086BB0055B2F9 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB7E31525C086BB0055B2F9 /* UserListView.swift */; };
+		ABB7E31C25C092900055B2F9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB7E31B25C092900055B2F9 /* Extensions.swift */; };
 		ABD3F4FB25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F4FA25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift */; };
 		ABD3F4FD25BB238E00A7A01B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F4FC25BB238E00A7A01B /* RootView.swift */; };
 		ABD3F4FF25BB239000A7A01B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD3F4FE25BB239000A7A01B /* Assets.xcassets */; };
@@ -39,6 +43,10 @@
 		AB9397D125BD825F006C3BD4 /* EXT_FeedCellButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXT_FeedCellButtonComponent.swift; sourceTree = "<group>"; };
 		AB9397D625BD8544006C3BD4 /* ButtonStackModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStackModifierView.swift; sourceTree = "<group>"; };
 		AB9397DA25BD87D3006C3BD4 /* SearchBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarComponent.swift; sourceTree = "<group>"; };
+		ABB7E30F25C07AAF0055B2F9 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		ABB7E31225C086B10055B2F9 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		ABB7E31525C086BB0055B2F9 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		ABB7E31B25C092900055B2F9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ABD3F4F725BB238E00A7A01B /* InstagramSwiftUICloneJan2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUICloneJan2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD3F4FA25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUICloneJan2021App.swift; sourceTree = "<group>"; };
 		ABD3F4FC25BB238E00A7A01B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -98,6 +106,14 @@
 				AB7E5F2A25BB28B3007AF870 /* RootTabView.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		ABB7E31A25C0927D0055B2F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ABB7E31B25C092900055B2F9 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		ABD3F4EE25BB238E00A7A01B = {
@@ -192,6 +208,7 @@
 		ABD3F50F25BB23BA00A7A01B /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				ABB7E31A25C0927D0055B2F9 /* Extensions */,
 				ABD3F51025BB23CF00A7A01B /* LibModifiers.swift */,
 				ABD3F51325BB23EC00A7A01B /* LibOptionals.swift */,
 				ABD3F51625BB240300A7A01B /* LibViewBuilders.swift */,
@@ -262,6 +279,9 @@
 		ABD3F52A25BB268F00A7A01B /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				ABB7E30F25C07AAF0055B2F9 /* PostGridView.swift */,
+				ABB7E31225C086B10055B2F9 /* UserCell.swift */,
+				ABB7E31525C086BB0055B2F9 /* UserListView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -341,10 +361,14 @@
 				AB7E5F3525BB2D57007AF870 /* NotificationsView.swift in Sources */,
 				AB9397D725BD8544006C3BD4 /* ButtonStackModifierView.swift in Sources */,
 				AB7E5F3825BB2D8C007AF870 /* ProfileView.swift in Sources */,
+				ABB7E31325C086B10055B2F9 /* UserCell.swift in Sources */,
 				AB9397DB25BD87D3006C3BD4 /* SearchBarComponent.swift in Sources */,
 				ABD3F51725BB240300A7A01B /* LibViewBuilders.swift in Sources */,
+				ABB7E31025C07AAF0055B2F9 /* PostGridView.swift in Sources */,
 				AB7E5F2B25BB28B3007AF870 /* RootTabView.swift in Sources */,
+				ABB7E31625C086BB0055B2F9 /* UserListView.swift in Sources */,
 				AB7E5F3F25BB31B4007AF870 /* FeedCellComponent.swift in Sources */,
+				ABB7E31C25C092900055B2F9 /* Extensions.swift in Sources */,
 				AB7E5F3B25BB2DBB007AF870 /* UploadPostView.swift in Sources */,
 				ABD3F51D25BB242600A7A01B /* LibTools2.swift in Sources */,
 				ABD3F51425BB23EC00A7A01B /* LibOptionals.swift in Sources */,

@@ -1,62 +1,60 @@
 import SwiftUI
 
-struct SearchView {
+struct PostGridView {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    @State var searchText: String = ""
-    @State var isInSearchMode: Bool = false
+    private let items = [GridItem(), GridItem(), GridItem()]
+    private let width = FULL_UI_SCREEN_WIDTH / 3
     //™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━«
     
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     
 }
-// MARK: END OF: SearchView
+// MARK: END OF: PostGridView
 
 /// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-extension SearchView: View {
+extension PostGridView: View {
     
     // MARK: ™━━━━━━━━━━━━ [body] ━━━━━━━━━━━━™
     var body: some View {
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        ScrollView(content: {
+        LazyVGrid(columns: items,  spacing: 2, content: {
             
-            // MARK: -∆  SearchBarComponent  ━━━━━━━━━━━━━━━━━━━
-            SearchBarComponent(text: $searchText, isInSearchMode: $isInSearchMode)
-            
-            ZStack {
-
-                if isInSearchMode {
-                    
-                    // MARK: -∆  UserListView  ━━━━━━━━━━━━━━━━━━━
-                    UserListView()
+            ForEach(0..<10) { _ in
+                //∆..........
+                
+                NavigationLink(
+                    destination: FeedView(),
                     //∆..........
-                } else {
-                    // MARK: -∆  PostGridView  ━━━━━━━━━━━━━━━━━━━
-                    PostGridView()
-                }
-                // ∆ END OF: if-else
+                    label: {
+                        Image("ironman")
+                            .imageGridFormatter(
+                                aspectRatio: .fill,
+                                frameW: width,
+                                frameH: width)
+                    })
+                /// ∆ END OF: NavigationLink
             }
-            /// ∆ END OF: ZStack
-            
+            /// ∆ END OF: ForEach
         })
-        // MARK: ||END__PARENT-SCROLLVIEW||
+        // MARK: ||END__PARENT-LAZYVGRID||
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     }
     // MARK: |||END OF: body|||
 }
-// MARK: END OF: SearchView
+// MARK: END OF: PostGridView
 
 /// ™━━━━━━━━━━━━━━━━━━━━━━━━━━ ([ Preview ]) ━━━━━━━━━━━━━━━━━━━━━━━━━━™
 
 // MARK: - Preview ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-struct SearchView_Previews: PreviewProvider {
+struct PostGridView_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        SearchView()//.padding(.all, 100)
+        PostGridView()//.padding(.all, 100)
         //.preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)
         //.previewLayout(.fixed(width: 360, height: 720))

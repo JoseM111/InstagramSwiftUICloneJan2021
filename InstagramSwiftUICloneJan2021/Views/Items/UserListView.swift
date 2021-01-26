@@ -1,20 +1,19 @@
 import SwiftUI
 
-struct SearchView {
+struct UserListView {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    @State var searchText: String = ""
-    @State var isInSearchMode: Bool = false
+    
     //™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━«
     
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     
 }
-// MARK: END OF: SearchView
+// MARK: END OF: UserListView
 
 /// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-extension SearchView: View {
+extension UserListView: View {
     
     // MARK: ™━━━━━━━━━━━━ [body] ━━━━━━━━━━━━™
     var body: some View {
@@ -22,24 +21,19 @@ extension SearchView: View {
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
         ScrollView(content: {
             
-            // MARK: -∆  SearchBarComponent  ━━━━━━━━━━━━━━━━━━━
-            SearchBarComponent(text: $searchText, isInSearchMode: $isInSearchMode)
-            
-            ZStack {
-
-                if isInSearchMode {
-                    
-                    // MARK: -∆  UserListView  ━━━━━━━━━━━━━━━━━━━
-                    UserListView()
+            LazyVStack {
+                
+                ForEach(0..<20) { _ in
                     //∆..........
-                } else {
-                    // MARK: -∆  PostGridView  ━━━━━━━━━━━━━━━━━━━
-                    PostGridView()
+                    NavigationLink(
+                        destination: ProfileView(),
+                        //∆..........
+                        label: { UserCell() })
+                    /// ∆ END OF: NavigationLink
                 }
-                // ∆ END OF: if-else
+                /// ∆ END OF: ForEach
             }
-            /// ∆ END OF: ZStack
-            
+            /// ∆ END OF: LazyVStack
         })
         // MARK: ||END__PARENT-SCROLLVIEW||
         
@@ -47,16 +41,16 @@ extension SearchView: View {
     }
     // MARK: |||END OF: body|||
 }
-// MARK: END OF: SearchView
+// MARK: END OF: UserListView
 
 /// ™━━━━━━━━━━━━━━━━━━━━━━━━━━ ([ Preview ]) ━━━━━━━━━━━━━━━━━━━━━━━━━━™
 
 // MARK: - Preview ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-struct SearchView_Previews: PreviewProvider {
+struct UserListView_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        SearchView()//.padding(.all, 100)
+        UserListView()//.padding(.all, 100)
         //.preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)
         //.previewLayout(.fixed(width: 360, height: 720))

@@ -1,62 +1,65 @@
 import SwiftUI
 
-struct SearchView {
+struct UserCell {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    @State var searchText: String = ""
-    @State var isInSearchMode: Bool = false
+    
     //™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━«
     
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     
 }
-// MARK: END OF: SearchView
+// MARK: END OF: UserCell
 
 /// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-extension SearchView: View {
+extension UserCell: View {
     
     // MARK: ™━━━━━━━━━━━━ [body] ━━━━━━━━━━━━™
     var body: some View {
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        ScrollView(content: {
+        HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
             
-            // MARK: -∆  SearchBarComponent  ━━━━━━━━━━━━━━━━━━━
-            SearchBarComponent(text: $searchText, isInSearchMode: $isInSearchMode)
+            // MARK: -∆  Image  ━━━━━━━━━━━━━━━━━━━
             
-            ZStack {
+            Image("ironman")
+                .circleImageFrame(
+                    aspectR: .fill,
+                    frameW: 48, frameH: 48)
+            
+            // MARK: -∆  VStack: user name * full name  ━━━━━━━━━━━━━━━━━━━
+            VStack(alignment: .leading) {
+                
+                Text("Ironman")
+                    .font(.system(size: 14, weight: .semibold))
+                
+                Text("Tony Starks")
+                    .font(.system(size: 14))
 
-                if isInSearchMode {
-                    
-                    // MARK: -∆  UserListView  ━━━━━━━━━━━━━━━━━━━
-                    UserListView()
-                    //∆..........
-                } else {
-                    // MARK: -∆  PostGridView  ━━━━━━━━━━━━━━━━━━━
-                    PostGridView()
-                }
-                // ∆ END OF: if-else
             }
-            /// ∆ END OF: ZStack
-            
+            /// ∆ END OF: VStack
+            .foregroundColor(.black)
+            //ººº━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            Spacer(minLength: 0) // Spaced Horizontally
+            //ººº━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
         })
-        // MARK: ||END__PARENT-SCROLLVIEW||
-        
+        // MARK: ||END__PARENT-HSTACK||
+        .padding(.leading)
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     }
     // MARK: |||END OF: body|||
 }
-// MARK: END OF: SearchView
+// MARK: END OF: UserCell
 
 /// ™━━━━━━━━━━━━━━━━━━━━━━━━━━ ([ Preview ]) ━━━━━━━━━━━━━━━━━━━━━━━━━━™
 
 // MARK: - Preview ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-struct SearchView_Previews: PreviewProvider {
+struct UserCell_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        SearchView()//.padding(.all, 100)
+        UserCell()//.padding(.all, 100)
         //.preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)
         //.previewLayout(.fixed(width: 360, height: 720))
