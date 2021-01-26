@@ -3,7 +3,7 @@ import SwiftUI
 /// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 /// ™ typealias
-typealias FeedCellButtonComponent = FeedCellComponent
+typealias FeedCellButtonComponent = FeedCell
 //™ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 extension FeedCellButtonComponent {

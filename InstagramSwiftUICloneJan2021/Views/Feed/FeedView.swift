@@ -25,7 +25,7 @@ extension FeedView: View {
                 
                 ForEach(0..<10, id: \.self) { _ in
                     //∆..........
-                    FeedCellComponent()
+                    FeedCell()
                 }
                 /// ∆ END OF: ForEach
             }

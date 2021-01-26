@@ -130,14 +130,14 @@ extension View {
     }
     
     func buttonCapsuleShapeFrame(horizontalPadding: CGFloat, verticalPadding: CGFloat,
-                                 bgColor: Color, fgColor: Color, fontSize: CGFloat) -> some View {
+                                 bgColor: Color, fgColor: Color, fontSize: CGFloat, cornerR: CGFloat = 0) -> some View {
         //∆..........
         self
             .padding(.horizontal, horizontalPadding)
             .padding(.vertical, verticalPadding)
             .background(bgColor)
             .foregroundColor(fgColor)
-            .clipShape(Capsule())
+            .cornerRadius(cornerR)
             .font(.system(size: fontSize, weight: .semibold))
     }
 }
