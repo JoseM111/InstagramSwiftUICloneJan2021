@@ -1,4 +1,4 @@
-## InstagramSwiftUICloneJan2021
+# InstagramSwiftUICloneJan2021
 #### Date: [ Fri, Jan 22, 2021 ] | A Instagram clone, using SwiftUI
 
 # Examples
