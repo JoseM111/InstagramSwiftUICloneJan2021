@@ -18,7 +18,7 @@ struct EditProfileBtnComponent: View {
                         .background(Color.white)
                         .foregroundColor(.black)
                         .overlay(RoundedRectangle(cornerRadius: 3)
-                                    .stroke(Color.gray, lineWidth: 1.0))
+                                    .stroke(Color(.lightGray), lineWidth: 1.0))
                         .frame(width: FULL_UI_SCREEN_WIDTH)
                 }
                 /// ∆ END OF: Button

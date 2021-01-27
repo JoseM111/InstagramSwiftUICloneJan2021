@@ -5,8 +5,7 @@ struct ProfileActionBtnView {
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     
     //™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━«
-    var isCurrentUser: Bool = false
-    var isFollowed: Bool = false
+    var isCurrentUser: Bool = true
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     
 }
@@ -26,34 +25,7 @@ extension ProfileActionBtnView: View {
             //∆..........
         } else {
             //∆..........
-            HStack(content: {
-                
-                Button(action: {}) {
-                    //∆━━━━━━ LABEL ━━━━━━
-                    Text(isFollowed ? "Following" : "Follow")
-                        .font(.system(size: 14, weight: .semibold))
-                        .frame(width: 172, height: 32)
-                        .foregroundColor(isFollowed ? .black : .white)
-                        .background(isFollowed ? Color.white : Color.twitterBlue2)
-                        .overlay(RoundedRectangle(cornerRadius: 3)
-                                    .stroke(Color.gray, lineWidth: isFollowed ? 1 : 0))
-                }
-                /// ∆ END OF: Button
-                .cornerRadius(3.0)
-                
-                Button(action: {}) {
-                    //∆━━━━━━ LABEL ━━━━━━
-                    Text("Message")
-                        .font(.system(size: 14, weight: .semibold))
-                        .frame(width: 172, height: 32)///<--geo
-                        .foregroundColor(.black)
-                        .overlay(RoundedRectangle(cornerRadius: 3)
-                                    .stroke(Color.gray, lineWidth: 1))
-                }
-                /// ∆ END OF: Button
-                .cornerRadius(3.0)
-            })
-            /// ∆ END OF: HStack
+            ProfileActionBtnComponent()
         }
         // MARK: ||END__PARENT-VSTACK||
         
