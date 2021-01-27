@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB3E382125C20399002A975A /* ProfileActionBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E382025C20399002A975A /* ProfileActionBtnView.swift */; };
+		AB3E382625C219F1002A975A /* ProfileActionBtnComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E382525C219F1002A975A /* ProfileActionBtnComponent.swift */; };
 		AB7E5F2B25BB28B3007AF870 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E5F2A25BB28B3007AF870 /* RootTabView.swift */; };
 		AB7E5F2E25BB2CE0007AF870 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E5F2D25BB2CE0007AF870 /* FeedView.swift */; };
 		AB7E5F3225BB2D20007AF870 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E5F3125BB2D20007AF870 /* SearchView.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		AB3E382025C20399002A975A /* ProfileActionBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionBtnView.swift; sourceTree = "<group>"; };
+		AB3E382525C219F1002A975A /* ProfileActionBtnComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionBtnComponent.swift; sourceTree = "<group>"; };
 		AB7E5F2A25BB28B3007AF870 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		AB7E5F2D25BB2CE0007AF870 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AB7E5F3125BB2D20007AF870 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB3E382825C21AA0002A975A /* ProfileComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AB9AD69625C192A000BD548E /* EditProfileBtnComponent.swift */,
+				AB3E382525C219F1002A975A /* ProfileActionBtnComponent.swift */,
+			);
+			path = ProfileComponents;
+			sourceTree = "<group>";
+		};
+		AB3E382B25C22126002A975A /* FeedComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AB9397D125BD825F006C3BD4 /* FeedCellBtnComponent.swift */,
+			);
+			path = FeedComponents;
+			sourceTree = "<group>";
+		};
+		AB3E382C25C22147002A975A /* SearchComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AB9397DA25BD87D3006C3BD4 /* SearchBarComponent.swift */,
+			);
+			path = SearchComponents;
+			sourceTree = "<group>";
+		};
 		AB7E5F2525BB274E007AF870 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,8 +276,8 @@
 				AB7E5F3725BB2D8C007AF870 /* ProfileView.swift */,
 				ABB7E32925C0BD5E0055B2F9 /* ProfileHeaderView.swift */,
 				ABB7E32C25C0C9E60055B2F9 /* UserStatView.swift */,
-				AB9AD69625C192A000BD548E /* EditProfileBtnComponent.swift */,
 				AB3E382025C20399002A975A /* ProfileActionBtnView.swift */,
+				AB3E382825C21AA0002A975A /* ProfileComponents */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -260,8 +287,8 @@
 			children = (
 				AB7E5F2D25BB2CE0007AF870 /* FeedView.swift */,
 				AB7E5F3E25BB31B4007AF870 /* FeedCell.swift */,
-				AB9397D125BD825F006C3BD4 /* FeedCellBtnComponent.swift */,
 				AB9397D625BD8544006C3BD4 /* ButtonStackModifierView.swift */,
+				AB3E382B25C22126002A975A /* FeedComponents */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -277,7 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				AB7E5F3125BB2D20007AF870 /* SearchView.swift */,
-				AB9397DA25BD87D3006C3BD4 /* SearchBarComponent.swift */,
+				AB3E382C25C22147002A975A /* SearchComponents */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -392,6 +419,7 @@
 				AB3E382125C20399002A975A /* ProfileActionBtnView.swift in Sources */,
 				ABD3F51D25BB242600A7A01B /* LibTools2.swift in Sources */,
 				ABD3F51425BB23EC00A7A01B /* LibOptionals.swift in Sources */,
+				AB3E382625C219F1002A975A /* ProfileActionBtnComponent.swift in Sources */,
 				ABD3F4FB25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift in Sources */,
 				AB9397D225BD825F006C3BD4 /* FeedCellBtnComponent.swift in Sources */,
 				ABD3F51125BB23CF00A7A01B /* LibModifiers.swift in Sources */,
