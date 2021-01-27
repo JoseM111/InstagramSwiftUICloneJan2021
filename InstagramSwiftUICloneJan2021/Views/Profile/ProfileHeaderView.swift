@@ -26,54 +26,57 @@ extension ProfileHeaderView: View {
                 
                 // MARK: -∆  Image  ━━━━━━━━━━━━━━━━━━━
                 Image("captain-marvel")
-                    .circleImageFrame(
-                        aspectR: .fill,
-                    frameW: 80, frameH: 80)
+                    .circleImageFrame(aspectR: .fill, frameW: 80, frameH: 80)
                 
                 //ººº━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                 Spacer(minLength: 0) // Spaced Horizontally
                 //ººº━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                 
                 // MARK: -∆  User stats  ━━━━━━━━━━━━━━━━━━━
-                ForEach(0..<3) { _ in
-                    //∆..........
-                    UserStatView()
+                HStack(spacing: 25) {
+                    
+                    UserStatView(value: 1, title: "Post")
+                    UserStatView(value: 2, title: "Followers")
+                    UserStatView(value: 4, title: "Following")
                 }
+//                .padding(.trailing, 20)
                 
             }
             /// ∆ END OF: HStack
             .padding(.horizontal)
+            //∆ HANGER ™👕™ ━━━━━━━━━━━━━━━━━
             
-            // MARK: -∆  User name  ━━━━━━━━━━━━━━━━━━━
-            Text("Captain Marvel")
-                .font(.system(size: 15, weight: .semibold))
-                .padding([.leading, .top])
-            
-            // MARK: -∆  Caption  ━━━━━━━━━━━━━━━━━━━
-            Text("The Most Powerful Super Heroe • Alive")
-                .font(.system(size: 15))
-                .padding(.leading)
-                .padding(.top, 1)
-            
-            // MARK: -∆  Button(edit-profile)  ━━━━━━━━━━━━━━━━━━━
-            HStack {
+            // MARK: -∆  USER NAME * CAPTION  ━━━━━━━━━━━━━━━━━━━
+            VStack(alignment: .leading) {
                 
-                Button(action: {  }) {
-                    //∆━━━━━━ LABEL ━━━━━━
-                    Text("Edit Profile")
-                }
-                .font(.system(size: 14, weight: .semibold))
-                .frame(width: 360, height: 32)
-                .background(Color.white)
-                .foregroundColor(.black)
-                .overlay(
-                    //∆..........
-                    RoundedRectangle(cornerRadius: 3)
-                        .stroke(Color.gray, lineWidth: 1.0)
-                )
+                Text("Captain Marvel")
+                    .font(.system(size: 15, weight: .semibold))
+                    .padding(.top, 5)
+                
+                // MARK: -∆  Caption  ━━━━━━━━━━━━━━━━━━━
+                Text("The Most Powerful Super Heroe • Alive")
+                    .font(.system(size: 15))
+                    .padding(.top, 1)
             }
             /// ∆ END OF: HStack
-            .padding([.horizontal, .top])
+            .padding(.leading, 20)
+            //∆ HANGER ™👕™ ━━━━━━━━━━━━━━━━━
+            
+            // MARK: -∆  Button(edit-profile || Follow * Message)  ━━━━━━━━━━━━━━━━━━━
+            HStack {
+                
+                //ººº━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                Spacer(minLength: 0) // Spaced Horizontally
+                //ººº━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                
+                ProfileActionBtnView()
+                
+                //ººº━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                Spacer(minLength: 0) // Spaced Horizontally
+                //ººº━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            }
+            /// ∆ END OF: HStack
+            .padding(.top, 5)
         })
         // MARK: ||END__PARENT-VSTACK||
         
@@ -98,4 +101,3 @@ struct ProfileHeaderView_Previews: PreviewProvider {
         //.previewLayout(.fixed(width: 440, height: 270))
     }
 }
-

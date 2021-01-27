@@ -40,7 +40,7 @@ extension PostGridView: View {
             /// ∆ END OF: ForEach
         })
         // MARK: ||END__PARENT-LAZYVGRID||
-        
+        .padding(.top, 20)
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     }
     // MARK: |||END OF: body|||
