@@ -51,13 +51,11 @@ extension FeedCell: View {
                 
                 ForEach(sfSymbolList, id: \.self) { sfSymbol in
                     //∆..........
-                    ButtonUIScreen(actionCompletion: {
+                    FeedCellBtnComponent(
+                        symbolStr: sfSymbol, actionCompletion: {
                         //∆..........
                         
-                    },
-                    //∆..........
-                    sfSymbolStr: sfSymbol
-                    )
+                    })
                     /// ∆ END OF: Button
                 }
                 /// ∆ END OF: ForEach
