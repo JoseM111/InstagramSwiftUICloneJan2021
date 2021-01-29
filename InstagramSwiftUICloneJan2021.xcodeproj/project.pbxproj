@@ -38,6 +38,12 @@
 		ABD3F51D25BB242600A7A01B /* LibTools2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51C25BB242600A7A01B /* LibTools2.swift */; };
 		ABF29EB325C3FFDC0051F812 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */; };
 		ABF29EBE25C423D90051F812 /* UploadPostShareWithBtnComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EBD25C423D90051F812 /* UploadPostShareWithBtnComponent.swift */; };
+		ABF29ECA25C425B20051F812 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EC925C425B20051F812 /* LoginView.swift */; };
+		ABF29ECD25C425DD0051F812 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29ECC25C425DD0051F812 /* RegistrationView.swift */; };
+		ABF29ED025C4260D0051F812 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29ECF25C4260D0051F812 /* ResetPasswordView.swift */; };
+		ABF29EDA25C434F20051F812 /* AuthLogoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29ED925C434F20051F812 /* AuthLogoComponent.swift */; };
+		ABF29EE025C43F690051F812 /* CustomSecureFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EDF25C43F690051F812 /* CustomSecureFieldComponent.swift */; };
+		ABF29EE325C43F9D0051F812 /* CustomTextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EE225C43F9D0051F812 /* CustomTextFieldComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +80,12 @@
 		ABD3F51C25BB242600A7A01B /* LibTools2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTools2.swift; sourceTree = "<group>"; };
 		ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		ABF29EBD25C423D90051F812 /* UploadPostShareWithBtnComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostShareWithBtnComponent.swift; sourceTree = "<group>"; };
+		ABF29EC925C425B20051F812 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ABF29ECC25C425DD0051F812 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		ABF29ECF25C4260D0051F812 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		ABF29ED925C434F20051F812 /* AuthLogoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLogoComponent.swift; sourceTree = "<group>"; };
+		ABF29EDF25C43F690051F812 /* CustomSecureFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureFieldComponent.swift; sourceTree = "<group>"; };
+		ABF29EE225C43F9D0051F812 /* CustomTextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				ABD3F52A25BB268F00A7A01B /* Items */,
+				ABF29EC325C425740051F812 /* Authentication */,
 				ABD3F52825BB262900A7A01B /* Notifications */,
 				ABD3F52725BB262800A7A01B /* Search */,
 				ABD3F52625BB262600A7A01B /* Comments */,
@@ -338,6 +351,8 @@
 			isa = PBXGroup;
 			children = (
 				ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */,
+				ABF29EDF25C43F690051F812 /* CustomSecureFieldComponent.swift */,
+				ABF29EE225C43F9D0051F812 /* CustomTextFieldComponent.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -348,6 +363,25 @@
 				ABF29EBD25C423D90051F812 /* UploadPostShareWithBtnComponent.swift */,
 			);
 			path = UploadPostComponent;
+			sourceTree = "<group>";
+		};
+		ABF29EC325C425740051F812 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				ABF29EC925C425B20051F812 /* LoginView.swift */,
+				ABF29ECC25C425DD0051F812 /* RegistrationView.swift */,
+				ABF29ECF25C4260D0051F812 /* ResetPasswordView.swift */,
+				ABF29ED825C434C90051F812 /* AuthComponents */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		ABF29ED825C434C90051F812 /* AuthComponents */ = {
+			isa = PBXGroup;
+			children = (
+				ABF29ED925C434F20051F812 /* AuthLogoComponent.swift */,
+			);
+			path = AuthComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +456,7 @@
 				AB7E5F3225BB2D20007AF870 /* SearchView.swift in Sources */,
 				ABD3F4FD25BB238E00A7A01B /* RootView.swift in Sources */,
 				AB7E5F2E25BB2CE0007AF870 /* FeedView.swift in Sources */,
+				ABF29ED025C4260D0051F812 /* ResetPasswordView.swift in Sources */,
 				AB7E5F3525BB2D57007AF870 /* NotificationsView.swift in Sources */,
 				ABF29EBE25C423D90051F812 /* UploadPostShareWithBtnComponent.swift in Sources */,
 				AB9397D725BD8544006C3BD4 /* ButtonStackModifierView.swift in Sources */,
@@ -436,7 +471,9 @@
 				ABB7E32A25C0BD5E0055B2F9 /* ProfileHeaderView.swift in Sources */,
 				ABB7E31625C086BB0055B2F9 /* UserListView.swift in Sources */,
 				ABB7E32125C0AA570055B2F9 /* NotificationCell.swift in Sources */,
+				ABF29EE025C43F690051F812 /* CustomSecureFieldComponent.swift in Sources */,
 				AB7E5F3F25BB31B4007AF870 /* FeedCell.swift in Sources */,
+				ABF29ECA25C425B20051F812 /* LoginView.swift in Sources */,
 				ABF29EB325C3FFDC0051F812 /* ImagePicker.swift in Sources */,
 				ABB7E31C25C092900055B2F9 /* Extensions.swift in Sources */,
 				AB7E5F3B25BB2DBB007AF870 /* UploadPostView.swift in Sources */,
@@ -444,8 +481,11 @@
 				ABD3F51D25BB242600A7A01B /* LibTools2.swift in Sources */,
 				ABD3F51425BB23EC00A7A01B /* LibOptionals.swift in Sources */,
 				AB3E382625C219F1002A975A /* ProfileActionBtnComponent.swift in Sources */,
+				ABF29EE325C43F9D0051F812 /* CustomTextFieldComponent.swift in Sources */,
 				ABD3F4FB25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift in Sources */,
+				ABF29ECD25C425DD0051F812 /* RegistrationView.swift in Sources */,
 				AB9397D225BD825F006C3BD4 /* FeedCellBtnComponent.swift in Sources */,
+				ABF29EDA25C434F20051F812 /* AuthLogoComponent.swift in Sources */,
 				ABD3F51125BB23CF00A7A01B /* LibModifiers.swift in Sources */,
 				ABD3F51A25BB241400A7A01B /* LibTools1.swift in Sources */,
 			);
