@@ -55,7 +55,7 @@ extension NotificationCell: View {
                         
                 }
                 /// ∆ END OF: Button(Follow)
-                .buttonCapsuleShapeFrame(
+                .buttonShapeFrame(
                     horizontalPadding: 20, verticalPadding: 8,
                     bgColor: .twitterBlue2, fgColor: .white,
                     fontSize: 14, cornerR: 50)
