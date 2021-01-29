@@ -37,6 +37,7 @@
 		ABD3F51A25BB241400A7A01B /* LibTools1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51925BB241400A7A01B /* LibTools1.swift */; };
 		ABD3F51D25BB242600A7A01B /* LibTools2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51C25BB242600A7A01B /* LibTools2.swift */; };
 		ABF29EB325C3FFDC0051F812 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */; };
+		ABF29EBE25C423D90051F812 /* UploadPostShareWithBtnComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EBD25C423D90051F812 /* UploadPostShareWithBtnComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		ABD3F51925BB241400A7A01B /* LibTools1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTools1.swift; sourceTree = "<group>"; };
 		ABD3F51C25BB242600A7A01B /* LibTools2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTools2.swift; sourceTree = "<group>"; };
 		ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		ABF29EBD25C423D90051F812 /* UploadPostShareWithBtnComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostShareWithBtnComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				AB7E5F3A25BB2DBB007AF870 /* UploadPostView.swift */,
+				ABF29EBC25C423C60051F812 /* UploadPostComponent */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -337,6 +340,14 @@
 				ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		ABF29EBC25C423C60051F812 /* UploadPostComponent */ = {
+			isa = PBXGroup;
+			children = (
+				ABF29EBD25C423D90051F812 /* UploadPostShareWithBtnComponent.swift */,
+			);
+			path = UploadPostComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +423,7 @@
 				ABD3F4FD25BB238E00A7A01B /* RootView.swift in Sources */,
 				AB7E5F2E25BB2CE0007AF870 /* FeedView.swift in Sources */,
 				AB7E5F3525BB2D57007AF870 /* NotificationsView.swift in Sources */,
+				ABF29EBE25C423D90051F812 /* UploadPostShareWithBtnComponent.swift in Sources */,
 				AB9397D725BD8544006C3BD4 /* ButtonStackModifierView.swift in Sources */,
 				AB9AD69725C192A000BD548E /* EditProfileBtnComponent.swift in Sources */,
 				AB7E5F3825BB2D8C007AF870 /* ProfileView.swift in Sources */,
