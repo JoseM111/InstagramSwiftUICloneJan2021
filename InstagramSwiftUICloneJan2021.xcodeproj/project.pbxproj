@@ -36,6 +36,7 @@
 		ABD3F51725BB240300A7A01B /* LibViewBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51625BB240300A7A01B /* LibViewBuilders.swift */; };
 		ABD3F51A25BB241400A7A01B /* LibTools1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51925BB241400A7A01B /* LibTools1.swift */; };
 		ABD3F51D25BB242600A7A01B /* LibTools2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51C25BB242600A7A01B /* LibTools2.swift */; };
+		ABF29EB325C3FFDC0051F812 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		ABD3F51625BB240300A7A01B /* LibViewBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibViewBuilders.swift; sourceTree = "<group>"; };
 		ABD3F51925BB241400A7A01B /* LibTools1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTools1.swift; sourceTree = "<group>"; };
 		ABD3F51C25BB242600A7A01B /* LibTools2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTools2.swift; sourceTree = "<group>"; };
+		ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,8 +197,10 @@
 		ABD3F50A25BB23AA00A7A01B /* Res */ = {
 			isa = PBXGroup;
 			children = (
-				ABD3F50F25BB23BA00A7A01B /* Libs */,
 				ABD3F50325BB239000A7A01B /* Info.plist */,
+				ABF29EB125C3FFAE0051F812 /* Utils */,
+				ABB7E31A25C0927D0055B2F9 /* Extensions */,
+				ABD3F50F25BB23BA00A7A01B /* Libs */,
 			);
 			path = Res;
 			sourceTree = "<group>";
@@ -245,7 +249,6 @@
 		ABD3F50F25BB23BA00A7A01B /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				ABB7E31A25C0927D0055B2F9 /* Extensions */,
 				ABD3F51025BB23CF00A7A01B /* LibModifiers.swift */,
 				ABD3F51325BB23EC00A7A01B /* LibOptionals.swift */,
 				ABD3F51625BB240300A7A01B /* LibViewBuilders.swift */,
@@ -326,6 +329,14 @@
 				ABB7E31525C086BB0055B2F9 /* UserListView.swift */,
 			);
 			path = Items;
+			sourceTree = "<group>";
+		};
+		ABF29EB125C3FFAE0051F812 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +425,7 @@
 				ABB7E31625C086BB0055B2F9 /* UserListView.swift in Sources */,
 				ABB7E32125C0AA570055B2F9 /* NotificationCell.swift in Sources */,
 				AB7E5F3F25BB31B4007AF870 /* FeedCell.swift in Sources */,
+				ABF29EB325C3FFDC0051F812 /* ImagePicker.swift in Sources */,
 				ABB7E31C25C092900055B2F9 /* Extensions.swift in Sources */,
 				AB7E5F3B25BB2DBB007AF870 /* UploadPostView.swift in Sources */,
 				AB3E382125C20399002A975A /* ProfileActionBtnView.swift in Sources */,
