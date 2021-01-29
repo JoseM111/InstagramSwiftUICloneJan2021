@@ -27,17 +27,22 @@ extension UploadPostView: View {
                     //∆━━━━━━ LABEL ━━━━━━
                     ZStack {
                         
-                        Image("add_photo_icon")
+                        Image("canva-instagram")
                             .resizable()
                             .renderingMode(.template)
-                            .frame(width: 280, height: 280)
+                            .frame(width: 300, height: 300)
                             .aspectRatio(contentMode: .fill)
-                            .foregroundColor(.twitterBlue)
+                            .foregroundColor(.gray)
                             .clipped()
-                            .padding(.top, 56)
+                            .padding(.top, 67)
+                        
+                        Image("instagram-white-text")
+                            .imageGridFormatter(aspectRatio: .fit, frameW: 120, frameH: 120)
+                            .padding(.top, 240)
+                            .cornerRadius(50)
                         
                         Text("Photo")
-                            .foregroundColor(.twitterBlue)
+                            .foregroundColor(Color(.lightGray))
                             .font(.system(size: 20, weight: .semibold))
                             .padding(.top, 150)
                     }
