@@ -129,7 +129,7 @@ extension View {
             .clipped()
     }
     
-    func buttonCapsuleShapeFrame(horizontalPadding: CGFloat, verticalPadding: CGFloat,
+    func buttonShapeFrame(horizontalPadding: CGFloat, verticalPadding: CGFloat,
                                  bgColor: Color, fgColor: Color, fontSize: CGFloat, cornerR: CGFloat = 0) -> some View {
         //∆..........
         self
@@ -141,6 +141,7 @@ extension View {
             .font(.system(size: fontSize, weight: .semibold))
     }
 }
+/// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 // MARK: -∆ ••••••••• [ BackGroundColorOnZStack ] •••••••••
 struct BgColor_On_ZStackModifier: ViewModifier {
@@ -158,6 +159,7 @@ struct BgColor_On_ZStackModifier: ViewModifier {
             .ignoresSafeArea()
     }
 }
+/// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 // MARK: -∆ ••••••••• OuterFrameCardModifier •••••••••
 struct OuterFrameCardModifier: ViewModifier {
@@ -191,6 +193,7 @@ struct OuterFrameCardModifier: ViewModifier {
         //--|............................................
     }
 }
+/// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 // MARK: -∆ ••••••••• [ Action Button Modifier ] •••••••••
 struct ButtonCustomFrame: ViewModifier {
@@ -214,6 +217,7 @@ struct ButtonCustomFrame: ViewModifier {
             .modifier(TextShadowModifier())
     }
 }
+/// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 // MARK: -∆ ••••••••• TextShadowModifier •••••••••
 struct TextShadowModifier: ViewModifier {
@@ -247,6 +251,10 @@ struct TextShadowModifier: ViewModifier {
     }
 }
 
+/// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+/// @━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
 
