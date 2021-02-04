@@ -3,11 +3,10 @@ import SwiftUI
 struct CustomSecureFieldComponent {
     // MARK: - ™PROPERTIES™
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    
+    @Binding var text: String
     //™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━«
-    
+    let placeholder: Text
     ///™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    
 }
 // MARK: END OF: CustomTextFieldComponent
 
@@ -19,12 +18,30 @@ extension CustomSecureFieldComponent: View {
     var body: some View {
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        VStack(alignment: .center, spacing: nil, content: {
+        ZStack(alignment: .leading, content: {
             
-            iAmHere(myStr: "CustomSecureFieldComponent")
+            if text.isEmpty {
+                //∆..........
+                placeholder
+                    .foregroundColor(Color(.init(white: 1, alpha: 0.8)))
+                    .padding(.leading, 30)
+                
+            }
+            /// ∆ END OF: if-statement
+            
+            HStack {
+                
+                Image(systemName: "lock")
+                    .imageGridFormatter(aspectRatio: .fit, frameW: 20, frameH: 20)
+                    .foregroundColor(.white)
+                
+                SecureField("", text: $text)
+                
+            }
+            /// ∆ END OF: HStack
             
         })
-        // MARK: ||END__PARENT-VSTACK||
+        // MARK: ||END__PARENT-ZSTACK||
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     }
@@ -39,8 +56,10 @@ struct CustomSecureFieldComponent_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        CustomSecureFieldComponent()//.padding(.all, 100)
-        //.preferredColorScheme(.dark)
+        CustomSecureFieldComponent(
+            text: .constant(""),
+            placeholder: Text("Password"))//.padding(.all, 100)
+        .preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)
         //.previewLayout(.fixed(width: 360, height: 720))
         // The preview below is for like a card

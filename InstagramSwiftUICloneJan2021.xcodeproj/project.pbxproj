@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB3E382125C20399002A975A /* ProfileActionBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E382025C20399002A975A /* ProfileActionBtnView.swift */; };
 		AB3E382625C219F1002A975A /* ProfileActionBtnComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E382525C219F1002A975A /* ProfileActionBtnComponent.swift */; };
+		AB54B4F625CB571E00B86360 /* TextFieldFormatModComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54B4F525CB571D00B86360 /* TextFieldFormatModComponent.swift */; };
 		AB7E5F2B25BB28B3007AF870 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E5F2A25BB28B3007AF870 /* RootTabView.swift */; };
 		AB7E5F2E25BB2CE0007AF870 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E5F2D25BB2CE0007AF870 /* FeedView.swift */; };
 		AB7E5F3225BB2D20007AF870 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E5F3125BB2D20007AF870 /* SearchView.swift */; };
@@ -36,6 +37,8 @@
 		ABD3F51725BB240300A7A01B /* LibViewBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51625BB240300A7A01B /* LibViewBuilders.swift */; };
 		ABD3F51A25BB241400A7A01B /* LibTools1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51925BB241400A7A01B /* LibTools1.swift */; };
 		ABD3F51D25BB242600A7A01B /* LibTools2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F51C25BB242600A7A01B /* LibTools2.swift */; };
+		ABD7318925CC0E04005C893F /* Ext_RegistrationTxtFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD7318825CC0E04005C893F /* Ext_RegistrationTxtFieldComponent.swift */; };
+		ABD7318D25CC115C005C893F /* Ext_RegistrationLogoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD7318C25CC115C005C893F /* Ext_RegistrationLogoComponent.swift */; };
 		ABF29EB325C3FFDC0051F812 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */; };
 		ABF29EBE25C423D90051F812 /* UploadPostShareWithBtnComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EBD25C423D90051F812 /* UploadPostShareWithBtnComponent.swift */; };
 		ABF29ECA25C425B20051F812 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF29EC925C425B20051F812 /* LoginView.swift */; };
@@ -49,6 +52,7 @@
 /* Begin PBXFileReference section */
 		AB3E382025C20399002A975A /* ProfileActionBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionBtnView.swift; sourceTree = "<group>"; };
 		AB3E382525C219F1002A975A /* ProfileActionBtnComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionBtnComponent.swift; sourceTree = "<group>"; };
+		AB54B4F525CB571D00B86360 /* TextFieldFormatModComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormatModComponent.swift; sourceTree = "<group>"; };
 		AB7E5F2A25BB28B3007AF870 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		AB7E5F2D25BB2CE0007AF870 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AB7E5F3125BB2D20007AF870 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		ABD3F51625BB240300A7A01B /* LibViewBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibViewBuilders.swift; sourceTree = "<group>"; };
 		ABD3F51925BB241400A7A01B /* LibTools1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTools1.swift; sourceTree = "<group>"; };
 		ABD3F51C25BB242600A7A01B /* LibTools2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTools2.swift; sourceTree = "<group>"; };
+		ABD7318825CC0E04005C893F /* Ext_RegistrationTxtFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext_RegistrationTxtFieldComponent.swift; sourceTree = "<group>"; };
+		ABD7318C25CC115C005C893F /* Ext_RegistrationLogoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext_RegistrationLogoComponent.swift; sourceTree = "<group>"; };
 		ABF29EB225C3FFDC0051F812 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		ABF29EBD25C423D90051F812 /* UploadPostShareWithBtnComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostShareWithBtnComponent.swift; sourceTree = "<group>"; };
 		ABF29EC925C425B20051F812 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -379,6 +385,9 @@
 		ABF29ED825C434C90051F812 /* AuthComponents */ = {
 			isa = PBXGroup;
 			children = (
+				ABD7318825CC0E04005C893F /* Ext_RegistrationTxtFieldComponent.swift */,
+				ABD7318C25CC115C005C893F /* Ext_RegistrationLogoComponent.swift */,
+				AB54B4F525CB571D00B86360 /* TextFieldFormatModComponent.swift */,
 				ABF29ED925C434F20051F812 /* AuthLogoComponent.swift */,
 			);
 			path = AuthComponents;
@@ -460,6 +469,7 @@
 				AB7E5F3525BB2D57007AF870 /* NotificationsView.swift in Sources */,
 				ABF29EBE25C423D90051F812 /* UploadPostShareWithBtnComponent.swift in Sources */,
 				AB9397D725BD8544006C3BD4 /* ButtonStackModifierView.swift in Sources */,
+				ABD7318925CC0E04005C893F /* Ext_RegistrationTxtFieldComponent.swift in Sources */,
 				AB9AD69725C192A000BD548E /* EditProfileBtnComponent.swift in Sources */,
 				AB7E5F3825BB2D8C007AF870 /* ProfileView.swift in Sources */,
 				ABB7E31325C086B10055B2F9 /* UserCell.swift in Sources */,
@@ -478,8 +488,10 @@
 				ABB7E31C25C092900055B2F9 /* Extensions.swift in Sources */,
 				AB7E5F3B25BB2DBB007AF870 /* UploadPostView.swift in Sources */,
 				AB3E382125C20399002A975A /* ProfileActionBtnView.swift in Sources */,
+				AB54B4F625CB571E00B86360 /* TextFieldFormatModComponent.swift in Sources */,
 				ABD3F51D25BB242600A7A01B /* LibTools2.swift in Sources */,
 				ABD3F51425BB23EC00A7A01B /* LibOptionals.swift in Sources */,
+				ABD7318D25CC115C005C893F /* Ext_RegistrationLogoComponent.swift in Sources */,
 				AB3E382625C219F1002A975A /* ProfileActionBtnComponent.swift in Sources */,
 				ABF29EE325C43F9D0051F812 /* CustomTextFieldComponent.swift in Sources */,
 				ABD3F4FB25BB238E00A7A01B /* InstagramSwiftUICloneJan2021App.swift in Sources */,
