@@ -34,7 +34,7 @@ extension AuthLogoComponent: View {
             Spacer(minLength: 0) // Spaced Horizontally
             //ººº━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
         }
-        .padding(.horizontal, 60)
+//        .padding(.horizontal, 60)
         // MARK: ||END__PARENT-HSTACK||
         
         //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -52,7 +52,7 @@ struct AuthLogoComponent_Previews: PreviewProvider {
         
         AuthLogoComponent()//.padding(.all, 100)
         //.preferredColorScheme(.dark)
-        //.previewLayout(.sizeThatFits)
+        .previewLayout(.sizeThatFits)
         //.previewLayout(.fixed(width: 360, height: 720))
         // The preview below is for like a card
         //.previewLayout(.fixed(width: 440, height: 270))

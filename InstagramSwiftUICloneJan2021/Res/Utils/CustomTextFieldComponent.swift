@@ -62,7 +62,7 @@ struct CustomTextFieldComponent_Previews: PreviewProvider {
             placeholder: Text("Email"),
             sfImgName: "envelope")
         //.padding(.all, 100)
-        //.preferredColorScheme(.dark)
+        .preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)
         //.previewLayout(.fixed(width: 360, height: 720))
         // The preview below is for like a card
